@@ -6,7 +6,7 @@ import (
 
 func GetRouter() *gin.Engine {
 	r := gin.Default()
-	r.GET("/fib/:num", ShowFibNumber)
+	r.GET("/fib", ShowFibNumber)
 
 	return r
 }
