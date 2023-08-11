@@ -1,8 +1,10 @@
 package model
 
-import "math/big"
+import (
+	"math/big"
+)
 
-func CalcFib(num int) *big.Int{
+func CalcFib(num int) *big.Int {
 	fib_num := big.NewInt(0)
 	if num <= 2 {
 		fib_num.SetInt64(1)
