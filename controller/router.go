@@ -8,7 +8,11 @@ func GetRouter() *gin.Engine {
 	r := gin.Default()
 
 	r.GET("/fib", ShowFibNumber)
-	r.NoRoute(NoRouter)
 
+	r.NoRoute(NotFound)
+
+	r.HandleMethodNotAllowed = true
+    r.NoMethod(NotImplemented)
+	
 	return r
 }
