@@ -4,6 +4,13 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+func BadRequest(c *gin.Context) {
+	c.JSON(400, gin.H{
+		"status": 400,
+		"message": "Bad Request",
+	})
+}
+
 func NotFound(c *gin.Context) {
 	c.JSON(404, gin.H{
 		"status":  404,
