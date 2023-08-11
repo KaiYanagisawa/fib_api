@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fib_api/controller"
+	"github.com/KaiYanagisawa/fib_api/controller"
 )
 
 func main() {
