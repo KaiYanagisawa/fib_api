@@ -1,11 +1,10 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
+	"fib_api/controller"
 )
 
 func main() {
-	router := gin.Default()	
-
+	router := controller.GetRouter()	
 	router.Run(":8080")
 }
