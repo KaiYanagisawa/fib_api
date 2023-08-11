@@ -1,10 +1,11 @@
 package main
 
 import (
-	"net/http"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	http.HandleFunc("fib/", handleControl)
-	http.ListenAndServe(":8080", nil)
+	router := gin.Default()	
+
+	router.Run(":8080")
 }
