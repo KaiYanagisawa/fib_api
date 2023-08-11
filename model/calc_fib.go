@@ -6,7 +6,7 @@ import (
 
 func CalcFib(num int) *big.Int {
 	fib_num := big.NewInt(0)
-	if num <= 2 {
+	if num > 0 && num <= 2 {
 		fib_num.SetInt64(1)
 	} else {
 		pre_fib := big.NewInt(1)
